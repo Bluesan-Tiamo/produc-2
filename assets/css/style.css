@@ -25,6 +25,13 @@ body {
 a {
     text-decoration: none;
 }
+input,
+textarea,
+select,
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
 .btn {
     display: inline-flex;
     align-items: center;
@@ -556,7 +563,112 @@ a {
 }
 /* Footer */
 .footer {
-    margin-bottom: 500px;
     padding: 100px 135px 42px;
     background-color: var(--primary-header);
+    font-family: "Open Sans", sans-serif;
+}
+.footer__row {
+    display: flex;
+    /* justify-content: space-between; */
+    column-gap: 78px;
+}
+.footer__column--left {
+    max-width: 336px;
+}
+.footer__column--center {
+    min-width: 134px;
+}
+.footer__column--right {
+    max-width: 332px;
+}
+.footer__desc {
+    margin-top: 25px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #a9b3bb;
+}
+.footer__heading {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 1.75;
+    color: #ffffff;
+}
+.footer__link {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.86;
+    color: #a9b3bb;
+}
+.footer__link:last-child {
+    margin-bottom: 28px;
+}
+.footer__column--row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 28px;
+}
+.footer__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    color: var(--primary-2);
+    background: #ffffff;
+    border-radius: 50%;
+    transition: 0.25;
+}
+.footer__item:hover {
+    color: #ffffff;
+    background-color: var(--primary-2);
+}
+.footer__sub {
+    max-width: 273px;
+    margin-bottom: 10px;
+}
+.footer__email {
+    display: flex;
+}
+.footer__input {
+    width: 212px;
+    height: 46px;
+    border: 1px solid #406181;
+    border-radius: 4px;
+    outline: none;
+    padding: 0 10px;
+    margin-right: 12px;
+    background-color: transparent;
+}
+.footer__input::placeholder {
+    font-weight: 400;
+    font-size: 1.4rem;
+    color: #9ca8b1;
+}
+.footer__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    min-width: 108px;
+    height: 46px;
+    border-radius: 4px;
+    padding: 0 20px;
+    border: 1px solid var(--primary-2);
+    font-size: 1.6rem;
+    text-align: center;
+    color: #ffffff;
+    background: var(--primary-2);
+}
+.footer__coppyright {
+    max-width: 1170px;
+    padding-top: 28px;
+    border-top: 1px solid #406181;
+}
+.footer__coppyright--text {
+    font-weight: 400;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #aab3ba;
 }
